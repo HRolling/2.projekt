@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #EAE0D5;
 }
+  
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #C49A6C;
     color: white;
     padding: 10px 20px;
 }
@@ -27,5 +27,27 @@ nav a {
 }
 
 img{
-    width: 4vw;
+  height: 4vw; 
+}
+
+.cim{
+        background-image: url("images/hatter.PNG");
+        background-size: cover; 
+        background-position: center center;
+}
+
+#elso{
+    background-color: #C49A6C;
+    height: 50px;
+    width: 120px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#masod{
+    background-color: EAE0D5;
+    height: 50px;
+    width: 120px;
+    font-size: 1rem;
+    text-align: center;
 }
