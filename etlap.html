@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La Petite Fork</title>
     <link rel="stylesheet" href="css/etlap.css">
 </head>
 <body>
@@ -16,31 +16,44 @@
                 <li><a href="">Étlap</a></li>
                 <li><a href="index.html">Rólunk</a></li>
                 <li><a href="">Események</a></li>
-                <button></button>
             </ul>
+            <div class="dropdown" id="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown()"><img src="images/menu.png" alt=""></button>
+                <div class="dropdown-content">
+                  <a href="#">Étlap</a>
+                  <a href="index.html">Rólunk</a>
+                  <a href="#">Események</a>
+                </div>
+              </div>
+            
+              <script>
+                function toggleDropdown() {
+                  document.getElementById("dropdown").classList.toggle("show");
+                }
+              </script>
         </nav>
     </header>
-    <div class="cim">
+    <div class="cim" id="eltun">
         <h1>Mai Ajánlatunk</h1>
         <h2>Új ajánlat minden nap, kedvező áron!</h2>
     </div>
     <div id="flaj">
     <div class="aj">
         <img class="gep" src="images/bread (1).png" alt="baguette">
-        <img src="" alt="">
+        <img class="ajkep" src="images/Baguettes_-_stonesoup.jpg" alt="">
         <h1>Baguette</h1>
         <p>Frissen sült, ropogós külsővel és puha belsővel, a klasszikus francia<br> baguette tökéletes választás minden étkezés mellé.</p>
     </div>
     <div class="aj">
         <img class="gep" src="images/knife.png" alt="serving">
-        <img src="" alt="">
+        <img class="ajkep" src="images/toul-.jpeg" alt="">
         <h1>Ratatouille</h1>
         <p>Egy ínycsiklandó zöldségpörkölt, melyben a friss paradicsom, padlizsán,
             <br> cukkini és paprika harmonikus ízei keverednek.</p>
     </div>
     <div class="aj">
         <img class="gep" src="images/tiramisu.png" alt="tiramisu">
-        <img src="" alt="">
+        <img class="ajkep" src="images/Tiramisuk.png" alt="">
         <h1>Tiramisu</h1>
         <p>Az olasz klasszikus desszert, mely lágy kávéval áztatott piskótából,<br>
              mascarpone krémből és egy csipetnyi kakaóporból készül, igazi élvezet minden falatja.</p>
@@ -97,25 +110,138 @@
     <h2 class="alcim" id="e0">Főételek</h2>
     <div class="grid-container3">
         <div class="etelek" id="e5">
-            <img src="images/boeuf.jpg" alt="">
+            <img src="images/boeuf.jpeg" alt="">
             <h3>Boeuf Bourguignon</h3>
             <p>Vörösboros marharagu gyökérzöldségekkel és burgonyapürével</p>
         </div>
         <div class="etelek" id="e6">
-            <img src="" alt="">
-            <h3></h3>
-            <p></p>
+            <img src="images/images.jpeg" alt="">
+            <h3>Coq au Vin</h3>
+            <p>csirke gombával és gyökérzöldségekkel</p>
         </div>
         <div class="etelek" id="e7">
-            <img src="" alt="">
-            <h3></h3>
-            <p></p>
+            <img src="images/rat.jpg" alt="">
+            <h3>Ratatouille</h3>
+            <p>Provence-i zöldséges egytálétel (vegán)</p>
         </div>
         <div class="etelek" id="e8">
-            <img src="" alt="">
-            <h3></h3>
-            <p></p>
+            <img src="images/fish.jpg" alt="">
+            <h3>Filet de Bar à la Provençale</h3>
+            <p>Tengeri sügér friss fűszernövényekkel és grillezett zöldségekkel</p>
         </div>
     </div>
+    <h2 class="alcim" id="e0">Sajtválogatás</h2>
+    <div class="grid-container4">
+        <div class="etelek" id="e9">
+            <img src="images/640px-Camembert.jpg" alt="">
+            <h3>Camembert</h3>
+        </div>
+        <div class="etelek" id="e10">
+            <img src="images/Roquefort1.jpg" alt="">
+            <h3>Roquefort</h3>
+        </div>
+        <div class="etelek" id="e11">
+            <img src="images/Comte3.jpg" alt="">
+            <h3>Comté</h3>
+        </div>
+        <div class="etelek" id="e12">
+            <img src="images/Brie_11.jpg" alt="">
+            <h3>Brie</h3>
+        </div>
+        <div class="etelek" id="e13">
+            <img src="images/baguette.avif" alt="">
+            <h3>Baguette</h3>
+        </div>
+        <div class="etelek" id="e14">
+            <img src="images/szolo.jpg" alt="">
+            <h3>Friss szőlő</h3>
+        </div>
+    </div>
+    <h2 class="alcim" id="e0">Desszertek</h2>
+    <div class="grid-container5">
+        <div class="etelek" id="e15">
+            <img src="images/creme.jpg" alt="">
+            <h3>Crème Brûlée</h3>
+            <p> Klasszikus vaníliakrém karamellizált cukorréteggel</p>
+        </div>
+        <div class="etelek" id="e16">
+            <img src="images/tarte-tatin.jpg" alt="">
+            <h3>Tarte Tatin</h3>
+            <p>Fordított almatorta karamellizált almával</p>
+        </div>
+        <div class="etelek" id="e17">
+            <img src="images/mac.jpeg" alt="">
+            <h3>Macaron Assortiment</h3>
+            <p>Színes és ínycsiklandó macaronválogatás</p>
+        </div>
+        <div class="etelek" id="e18">
+            <img src="images/Mousse-au-Chocolat.webp" alt="">
+            <h3>Mousse au Chocolat</h3>
+            <p>Selymes francia csokoládéhab</p>
+        </div>
+    </div>
+    <h2 class="alcim" id="e0">Italok</h2>
+    <h4>Borok</h4>
+    <div class="grid-container6">
+        <div class="etelek" id="e19">
+            <img src="images/bordea.jpg" alt="">
+            <h3>Bordeaux</h3>
+        </div>
+        <div class="etelek" id="e20">
+            <img src="images/burgundy.jpg" alt="">
+            <h3>Burgundy</h3>
+        </div>
+        <div class="etelek" id="e21">
+            <img src="images/loire.jpg" alt="">
+            <h3>Loire</h3>
+        </div>
+    </div>
+    <h4>Teák és Kávék</h4>
+    <div class="grid-container7">
+        <div class="etelek" id="e22">
+            <img src="images/SES-cafe-au-lait.jpg" alt="">
+            <h3>Café au Lait</h3>
+        </div>
+        <div class="etelek" id="e23">
+            <img src="images/espresso.jpg" alt="">
+            <h3>Espresso</h3>
+        </div>
+        <div class="etelek" id="e24">
+            <img src="images/thealamenthe.jpeg" alt="">
+            <h3>Thé à la Menthe</h3>
+        </div>
+    </div>
+    <footer>
+        <img class="logokep" src="images/kep.PNG" alt="">
+        <div class="ad1" class="ad">
+            <img src="images/instagram.png" alt="">
+            <a href="#">Instagram</a>
+            <img src="images/instagram.png" alt="">
+        </div>
+        <a class="ad0" id="ad01"><img src="images/instagram.png" alt=""></a>
+        <div class="ad2" class="ad">
+            <img src="images/facebook.png" alt="">
+            <a href="#">Facebook</a>
+            <img src="images/facebook.png" alt="">
+        </div>
+        <a class="ad0" id="ad02"><img src="images/facebook.png" alt=""></a>
+        <div class="ad3" class="ad">
+            <img src="images/twitter.png" alt="">
+            <a href="#">Twitter</a>
+            <img src="images/twitter.png" alt="">
+        </div>
+        <a class="ad0" id="ad03"><img src="images/twitter.png" alt=""></a>
+        <div class="ad4" class="ad">
+            <img src="images/tik-tok.png" alt="">
+            <a href="#">TikTok</a>
+            <img src="images/tik-tok.png" alt="">
+        </div>
+        <a class="ad0" id="ad04"><img src="images/tik-tok.png" alt=""></a>
+        <div id="copyright">
+            <p>© 2025 La Petite Fork. All rights reserved.</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
 </body>
 </html>
