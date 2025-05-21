@@ -58,7 +58,7 @@ nav a {
 }
 .gep{
     height: 20%;
-    display: inline;
+    display: inline-block;
     margin-top: 4%;
 }
 .aj h1{
@@ -282,16 +282,16 @@ footer div{
 footer div p{
     display: inline-block;
 }
-.ad1{
+#ad1{
     grid-column: 2 / 3;
 }
-.ad2{
+#ad2{
     grid-column: 3 / 4;
 }
-.ad3{
+#ad3{
     grid-column: 4 / 5;
 }
-.ad4{
+#ad4{
     grid-column: 5 / 6;
 }
 #copyright{
@@ -436,5 +436,11 @@ footer div p{
     }
     nav{
         padding-bottom: 2%;
+    }
+    .ad a{
+        color: black;
+    }
+    #copyright a{
+        color: black;
     }
 }
