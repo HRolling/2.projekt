@@ -12,12 +12,28 @@
        <img src="images/kep.PNG" alt="" id="logof">
         <nav>
            
-            <ul>
+            <ul class="masmenu">
                 <li><a href="etlap.html">Étlap</a></li>
                 <li><a href="">Rólunk</a></li>
                 <li><a href="">Események</a></li>
             </ul>
         </nav>
+        <section class="menu">
+            <div class="dropdown" id="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown()"><img src="images/menu.png" alt=""></button>
+                <div class="dropdown-content">
+                  <a href="#">Étlap</a>
+                  <a href="index.html">Rólunk</a>
+                  <a href="#">Események</a>
+                </div>
+            </div>
+            
+              <script>
+                function toggleDropdown() {
+                  document.getElementById("dropdown").classList.toggle("show");
+                }
+              </script>
+              </section>
     </header>
     <div>
         <section class="cim">
@@ -44,17 +60,56 @@
 
         <section class="velbox">
    
-    <div class="velemeny border">
+    <div class="velemeny" id="FDW">
         <p>Modern, mégis hangulatos, tökéletes egy vacsorához.</p>
         <h4>Marc Lambert</h4>
-        <p> Fine Dining Weekly</p>
+        <p> Fine Dining Weekly</p> 
+      </div>
+    <div class="velemeny" id="SM">
+    <p>Elegáns és kifinomult hely, fantasztikus ételekkel!</p>
+    <h4>Sophie Moreau</h4>
+    <p> Gourmet Magazine</p>
     </div>
+        <div class="velemeny" id="IF">
+            <p>Kiváló konyha, csodás atmoszféra. Mindenképp visszatérek!</p>
+            <h4>Isabelle Fontaine</h4>
+            <p>Le Parisien</p>
+        </div>
 
+    
         </section>
     </div>
     <footer>
-     <img src="images/kep.PNG" alt="" id="logo">
-        <p>&copy; 2024 La Petite Fork. Minden jog fenntartva.</p>
+        <img class="logokep" src="images/kep.PNG" alt="">
+        <div id="ad1" class="ad">
+            <img src="images/instagram.png" alt="">
+            <a href="#">Instagram</a>
+            <img src="images/instagram.png" alt="">
+        </div>
+        <a class="ad0" id="ad01"><img src="images/instagram.png" alt=""></a>
+        <div id="ad2" class="ad">
+            <img src="images/facebook.png" alt="">
+            <a href="#">Facebook</a>
+            <img src="images/facebook.png" alt="">
+        </div>
+        <a class="ad0" id="ad02"><img src="images/facebook.png" alt=""></a>
+        <div id="ad3" class="ad">
+            <img src="images/twitter.png" alt="">
+            <a href="x.com">Twitter</a>
+            <img src="images/twitter.png" alt="">
+        </div>
+        <a class="ad0" id="ad03"><img src="images/twitter.png" alt=""></a>
+        <div id="ad4" class="ad">
+            <img src="images/tik-tok.png" alt="">
+            <a href="tiktok.com">TikTok</a>
+            <img src="images/tik-tok.png" alt="">
+        </div>
+        <a class="ad0" id="ad04"><img src="images/tik-tok.png" alt=""></a>
+        <div id="copyright">
+            <p>© 2025 La Petite Fork. All rights reserved.</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
     </footer>
 </body>  
 </html>
